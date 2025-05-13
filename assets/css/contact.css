@@ -1,6 +1,4 @@
-/* ===== ESTILOS ESPECÍFICOS PARA LA PÁGINA DE CONTACTO ===== */
 
-/* Contact Section */
 .contact {
     padding: var(--spacing-xxl) 0;
 }
@@ -109,7 +107,6 @@
     background-color: var(--color-primary-dark);
 }
 
-/* Map Section */
 .map {
     padding: var(--spacing-xxl) 0;
     background-color: var(--color-light);
@@ -138,7 +135,6 @@
     box-shadow: var(--shadow-md);
 }
 
-/* FAQ Section */
 .faq {
     padding: var(--spacing-xxl) 0;
 }
@@ -180,7 +176,6 @@
     margin: 0;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     .contact__container {
         flex-direction: column;

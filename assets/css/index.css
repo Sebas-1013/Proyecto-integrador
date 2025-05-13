@@ -1,6 +1,4 @@
-/* ===== ESTILOS ESPECÍFICOS PARA LA PÁGINA DE INICIO ===== */
 
-/* Hero Section */
 .hero {
     background-color: var(--color-dark);
     color: var(--text-white);
@@ -40,7 +38,6 @@
     background-color: var(--color-primary-light);
 }
 
-/* Features Section */
 .features {
     padding: var(--spacing-xxl) 0;
 }
@@ -92,7 +89,6 @@
     color: var(--text-medium);
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     .hero__title {
         font-size: var(--font-size-xxl);

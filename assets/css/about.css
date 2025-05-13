@@ -1,6 +1,4 @@
-/* ===== ESTILOS ESPECÍFICOS PARA LA PÁGINA ACERCA DE ===== */
 
-/* About Section */
 .about {
     padding: var(--spacing-xxl) 0;
 }
@@ -46,7 +44,6 @@
     font-weight: bold;
 }
 
-/* Mission Section */
 .mission {
     padding: var(--spacing-xxl) 0;
     background-color: var(--color-light);
@@ -87,7 +84,6 @@
     color: var(--text-medium);
 }
 
-/* Values Section */
 .values {
     padding: var(--spacing-xxl) 0;
 }
@@ -140,7 +136,6 @@
     color: var(--text-medium);
 }
 
-/* Team Section */
 .team {
     padding: var(--spacing-xxl) 0;
     background-color: var(--color-light);
@@ -203,7 +198,6 @@
     font-size: var(--font-size-sm);
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     .about__container,
     .mission__grid {
