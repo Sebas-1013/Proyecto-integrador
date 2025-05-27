@@ -87,4 +87,8 @@ El diseño se adapta a diferentes tamaños de pantalla mediante el uso de media 
 
 ## Créditos
 
+<<<<<<< HEAD
 Desarrollado como parte de un proyecto integrador por Santiago Calderon y grupo.
+=======
+Desarrollado como parte de un proyecto integrador por Santiago Calderon y grupo.
+>>>>>>> 8f2efdb0062b628d88ec72f2aa479c0e162bd61f
