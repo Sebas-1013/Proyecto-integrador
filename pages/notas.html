@@ -1,0 +1,99 @@
+  <title>Toma de Notas</title>
+   <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #969595;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #881f50;
+    }
+
+    .tabla-notas {
+      width: 90%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .tabla-notas th, .tabla-notas td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .tabla-notas th {
+      background-color: #881f50;
+      color: white;
+    }
+
+    .tabla-notas input[type="number"] {
+      width: 60px;
+      padding: 5px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .tabla-notas tr:nth-child(even) {
+      background-color: #f0f8f6;
+    }
+  </style>
+<body>
+
+  <h1>Planilla de Toma de Notas - Primer Semestre</h1>
+
+  <table class="tabla-notas">
+    <thead>
+      <tr>
+        <th>Estudiante</th>
+        <th>Nota 1</th>
+        <th>Nota 2</th>
+        <th>Nota 3</th>
+        <th>Promedio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Juan Pérez</td>
+        <td><input type="number" min="0" max="10" step="0.1" /></td>
+        <td><input type="number" min="0" max="10" step="0.1" /></td>
+        <td><input type="number" min="0" max="10" step="0.1" /></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>María García</td>
+        <td><input type="number" min="0" max="10" step="0.1" /></td>
+        <td><input type="number" min="0" max="10" step="0.1" /></td>
+        <td><input type="number" min="0" max="10" step="0.1" /></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Carlos López</td>
+        <td><input type="number" min="0" max="10" step="0.1" /></td>
+        <td><input type="number" min="0" max="10" step="0.1" /></td>
+        <td><input type="number" min="0" max="10" step="0.1" /></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Luisa Fernández</td>
+        <td><input type="number" min="0" max="10" step="0.1" /></td>
+        <td><input type="number" min="0" max="10" step="0.1" /></td>
+        <td><input type="number" min="0" max="10" step="0.1" /></td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+ <button>
+  <div class="button-outer">
+    <div class="button-inner">
+        
+      <span>Push</span>  
+    </div>
+  </div>
+</button>
+</body>
+</html>
