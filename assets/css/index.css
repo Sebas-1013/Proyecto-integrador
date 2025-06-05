@@ -189,11 +189,12 @@ p {
     margin: 0 auto;
 }
 
-.header__logo img {
-    width: 120px;
-    height: auto;
-    align-items: flex-end;
+.header__logo {
+    color: #050505; /* Cambia este valor al color que desees */
+    font-size: 2rem; /* Tamaño opcional */
+    font-weight: bold; /* Negrita opcional */
 }
+
 
 .header__nav {
     display: flex;
@@ -233,7 +234,7 @@ p {
 /* ===== FOOTER ===== */
 .footer {
     background-color: var(--color-dark);
-    color: var(--text-white);
+    color: #f5e9d7; /* beige suave */
     padding: var(--spacing-xl) 0 0;
 }
 
@@ -273,15 +274,15 @@ p {
 }
 
 .footer__nav a {
-    color: var(--text-light);
+    color: #e6d3b3;
 }
 
 .footer__nav a:hover {
-    color: var(--text-white);
+    color: #fff7e6;
 }
 
 .footer__contact p {
-    color: var(--text-light);
+    color: #e6d3b3;
     margin-bottom: var(--spacing-sm);
 
 }
@@ -294,7 +295,7 @@ p {
 }
 
 .footer__bottom p {
-    color: var(--text-light);
+    color: #e6d3b3;
     margin: 0;
     font-size: var(--font-size-sm);
 }
@@ -339,6 +340,26 @@ p {
     background-color: var(--color-light);
     color: var(--color-primary-dark);
 }
+
+/* Ajusta el tamaño del ícono de la planilla para que coincida con el de registro de excusas */
+.feature__icon {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Descripción breve debajo del icono en la tarjeta de planilla */
+.feature__desc {
+  font-size: 1rem;
+  color: #535252;
+  margin-bottom: 0.5rem;
+  margin-top: -0.5rem;
+  text-align: center;
+}
+
+/* Si el registro de excusas usa un tamaño diferente, igualar aquí */
 
 /* ===== MEDIA QUERIES ===== */
 @media (max-width: 768px) {

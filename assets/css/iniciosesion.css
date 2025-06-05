@@ -1,0 +1,121 @@
+html, body {
+  height: 100%;
+}
+body {
+  background: #f8f8f8;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header {
+  width: 100vw;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header__container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+.iniciosesion-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(136,31,80,0.15);
+  padding: 2.5rem 2rem;
+  max-width: 400px;
+  width: 100%;
+  margin: 40px auto 0 auto;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.iniciosesion-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(136,31,80,0.18);
+}
+.iniciosesion-title {
+  color: #881f50;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+.iniciosesion-form .form-group {
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+.iniciosesion-form label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #881f50;
+  font-weight: bold;
+}
+.iniciosesion-form input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+.btn-iniciar {
+  margin-top: 1.2rem;
+  padding: 0.9rem 2.5rem;
+  background: linear-gradient(90deg, #ff7eb3 0%, #881f50 100%);
+  color: #fff;
+  border: none;
+  border-radius: 32px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(136,31,80,0.18), 0 1.5px 8px #ff7eb3;
+  transition: background 0.25s, transform 0.18s, box-shadow 0.18s;
+  position: relative;
+  overflow: hidden;
+}
+.btn-iniciar:hover {
+  background: linear-gradient(90deg, #881f50 0%, #ff7eb3 100%);
+  transform: translateY(-3px) scale(1.06);
+  box-shadow: 0 8px 32px rgba(136,31,80,0.22), 0 2.5px 12px #ff7eb3;
+}
+.btn-iniciar span {
+  position: relative;
+  z-index: 1;
+}
+.mensaje-login {
+  margin-top: 1.2rem;
+  color: #fff;
+  background: #881f50;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(136,31,80,0.12);
+}
+.footer {
+  width: 100%;
+  margin-top: auto;
+}
+@media (max-width: 900px) {
+  .iniciosesion-card {
+    max-width: 98vw;
+    padding: 1.5rem 0.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .iniciosesion-card {
+    padding: 0.5rem 0.2rem;
+  }
+}

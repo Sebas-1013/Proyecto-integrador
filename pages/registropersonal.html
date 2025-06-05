@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Personal</title>
+    <link rel="stylesheet" href="../assets/css/registropersonal.css">
+    <link rel="shortcut icon" href="../assets/images/logodepagina/Imagennnn.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo">CedAsistencia</h1>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">Acerca de</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contacto</a></li>
+                    <li class="nav__item"><a href="registropersonal.html" class="nav__link nav__link--active">Registrarse</a></li>
+                   
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="registro-personal-card">
+        <h1 class="registro-personal-title">Registro Personal</h1>
+        <form class="registro-personal-form" id="registroForm">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="documento">Documento de Identidad</label>
+                <input type="text" id="documento" name="documento" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha de Nacimiento</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <button type="submit" class="btn-registrar">Registrarse</button>
+            <button type="button" class="btn-iniciar" onclick="window.location.href='iniciosesion.html'">Iniciar
+                Sesión</button>
+        </form>
+        <div id="mensaje-exito" class="mensaje-exito" style="display:none;">¡Registro exitoso!</div>
+    </div>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__info">
+                <h3 class="footer__logo">CedAsistencia</h3>
+                <p class="footer__text">Una plantilla de toma de asistencia moderna.</p>
+            </div>
+            <div class="footer__links">
+                <h4 class="footer__heading">Enlaces Rápidos</h4>
+                <ul class="footer__nav">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="registropersonal.html">Registrarse</a></li>
+                </ul>
+            </div>
+            <div class="footer__contact">
+                <h4 class="footer__heading">Contacto</h4>
+                <address>
+                    <p>Email: CedAsistencia@gmail.com</p>
+                    <p>Teléfono: (+57) 3025865891</p>
+                </address>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2025 CedAsistencia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('registroForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            document.getElementById('mensaje-exito').style.display = 'block';
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>

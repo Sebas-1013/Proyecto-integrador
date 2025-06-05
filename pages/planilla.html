@@ -4,139 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - CedAsistencia</title>
-
-</head>
-
-<head>
-<title>Planilla de Asistencias - Primer Semestre</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background: #969595;
-    margin: 0; padding: 20px;
-  }
-  h1 {
-    text-align: center;
-    color: #881f50;
-  }
-  .planilla {
-    margin: 20px auto;
-    max-width: 900px;
-    border-collapse: collapse;
-    width: 100%;
-    box-shadow: 0 0 10px rgba(85, 84, 84, 0.1);
-  }
-  .planilla th, .planilla td {
-    border: 1px solid #881f50;
-    padding: 8px 12px;
-    text-align: center;
-  }
-  .planilla th {
-    background-color: #881f50;
-    color: white;
-    position: sticky;
-    top: 0;
-  }
-  .planilla tbody tr:nth-child(even) {
-    background-color: #5c5c5c;
-  }
-  .planilla tbody tr:hover {
-    background-color: #666666;
-  }
-  .asistencia {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-  }
-  /* Estilo para celdas clicables */
-  .asistencia.checked {
-    background-color: #c052c4;
-  }
-</style>
+    <link rel="stylesheet" href="../assets/css/planilla.css">
+    <link rel="shortcut icon" href="../assets/images/logodepagina/Imagennnn.png" type="image/x-icon">
 </head>
 <body>
-
-<h1>Planilla de Asistencias - Primer Semestre</h1>
-
-<table class="planilla">
-  <thead>
-    <tr>
-      <th>Estudiante</th>
-      <th>Semana 1<br><small>01/06</small></th>
-      <th>Semana 2<br><small>03/06</small></th>
-      <th>Semana 3<br><small>05/06</small></th>
-      <th>Semana 4<br><small>07/06</small></th>
-      <th>Semana 5<br><small>09/06</small></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Juan Pérez</td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-    </tr>
-    <tr>
-      <td>María García</td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-    </tr>
-    <tr>
-      <td>Carlos López</td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-    </tr>
-    <tr>
-      <td>Luisa Fernández</td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-    </tr>
+<div class="planilla-card">
+  <div class="planilla-icon">📝</div>
+  <h1 class="planilla-title">Planilla de Asistencias - Primer Semestre</h1>
+  <table class="planilla-table">
+    <thead>
       <tr>
-      <td>Carlos Giraldo</td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-    </tr>
+        <th>Estudiante</th>
+        <th>Semana 1<br><small>01/06</small></th>
+        <th>Semana 2<br><small>03/06</small></th>
+        <th>Semana 3<br><small>05/06</small></th>
+        <th>Semana 4<br><small>07/06</small></th>
+        <th>Semana 5<br><small>09/06</small></th>
+      </tr>
+    </thead>
+    <tbody>
       <tr>
-      <td>Andres Martinez</td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-    </tr>
+        <td>Juan Pérez</td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+      </tr>
       <tr>
-      <td>Luis Perez</td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-      <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
-    </tr>
- 
-  </tbody>
-</table>
+        <td>María García</td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+      </tr>
+      <tr>
+        <td>Carlos López</td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+      </tr>
+      <tr>
+        <td>Luisa Fernández</td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+      </tr>
+      <tr>
+        <td>Carlos Giraldo</td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+      </tr>
+      <tr>
+        <td>Andres Martinez</td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+      </tr>
+      <tr>
+        <td>Luis Perez</td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+        <td><div class="asistencia" onclick="toggleAsistencia(this)"></div></td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="btn-atras" onclick="window.location.href='../index.html'">Atrás</button>
+  <button class="btn-enviar">Enviar</button>
+</div>
 <script>
-  // Función para marcar o desmarcar asistencia
   function toggleAsistencia(element) {
     element.classList.toggle('checked');
   }
 </script>
-
 </body>
 </html>
-
-</head>

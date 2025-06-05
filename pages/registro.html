@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Excusas</title>
+    <link rel="stylesheet" href="../assets/css/registro.css">
+    <link rel="shortcut icon" href="../assets/images/logodepagina/Imagennnn.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="registro-card" id="registroCard">
+            <div class="registro-card__icon">✏️</div>
+            <h2 class="registro-card__title">Registro de Excusas - Primer Semestre</h2>
+            <table class="tabla-excusas">
+              <thead>
+                <tr>
+                  <th>Estudiante</th>
+                  <th>Fecha</th>
+                  <th>Motivo</th>
+                  <th>Excusa</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Valentina Gómez</td>
+                  <td>2025-05-28</td>
+                  <td>Salud</td>
+                  <td class="explanation">No pude asistir por una cita médica programada con anterioridad.</td>
+                </tr>
+                <tr>
+                  <td>Andrés Ramírez</td>
+                  <td>2025-05-30</td>
+                  <td>Familiar</td>
+                  <td class="explanation">Fallecimiento de un familiar cercano, solicito permiso por duelo.</td>
+                </tr>
+                <tr>
+                  <td>Camila Torres</td>
+                  <td>2025-06-01</td>
+                  <td>Transporte</td>
+                  <td class="explanation">El transporte público presentó retrasos y no logré llegar a tiempo.</td>
+                </tr>
+                <tr>
+                  <td>Juan Esteban López</td>
+                  <td>2025-06-02</td>
+                  <td>Enfermedad</td>
+                  <td class="explanation">Presenté síntomas de gripe y fiebre, por lo que decidí no asistir para evitar contagios.</td>
+                </tr>
+                <tr>
+                  <td>Mariana Salazar</td>
+                  <td>2025-06-03</td>
+                  <td>Personal</td>
+                  <td class="explanation">Tuve que resolver un asunto personal urgente e inaplazable.</td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="btn-atras" onclick="event.stopPropagation(); window.location.href='../index.html'">Atrás</button>
+            <button class="btn-enviar" onclick="event.stopPropagation();">Enviar</button>
+        </div>
+    </main>
+    <script>
+    // Hace toda la tarjeta .registro-card clickeable para navegar
+    function makeRegistroCardClickable() {
+      var card = document.getElementById('registroCard');
+      if (card) {
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', function() {
+          window.location.href = 'registro.html';
+        });
+      }
+    }
+    window.addEventListener('DOMContentLoaded', makeRegistroCardClickable);
+    </script>
+</body>
+</html>
